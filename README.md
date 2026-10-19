@@ -27,13 +27,13 @@ Configure:
 
 | Variável | Padrão | Regra |
 | --- | --- | --- |
-| SYNC_URL | https://paineldemulheres.pibdobrasil.org/sync.php | HTTPS, sem credenciais ou parâmetros |
+| SYNC_URL | SEU URL | HTTPS, sem credenciais ou parâmetros |
 | SYNC_WEB_KEY | sem padrão válido | mínimo 48 caracteres ASCII sem espaços |
 | SYNC_INTERVAL_SECONDS | 300 | inteiro entre 60 e 86400 |
 | SYNC_TIMEOUT_MS | 240000 | inteiro entre 1000 e 900000 |
 | SYNC_MAX_RETRIES | 2 | inteiro entre 0 e 5, além da primeira tentativa |
 | TZ | America/Sao_Paulo | horários dos logs sempre neste fuso |
-| AUTO_SYNC_SECONDS | 300 | copie o valor real da Locaweb; 0 a 86400 |
+| AUTO_SYNC_SECONDS | 0 | copie o valor real da Locaweb; 0 a 86400 |
 
 O intervalo deve ser maior ou igual ao `AUTO_SYNC_SECONDS`. Não é possível descobrir esse valor remotamente: confirme no ambiente PHP. O Node carrega `.env` nativamente, a partir da raiz do projeto, mesmo quando iniciado dentro de src; variáveis do processo têm precedência. Reinicie o serviço após alterações.
 
