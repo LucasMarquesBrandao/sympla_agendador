@@ -1,0 +1,9 @@
+{
+  "name": "sympla-agendador",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Agendador independente para o endpoint PHP de sincronização",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node src/index.js", "test": "node --test", "check": "node src/index.js --check" }
+}
